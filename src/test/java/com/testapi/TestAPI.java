@@ -24,7 +24,6 @@ public class TestAPI extends MassaDeDados {
         validacao(response);
     }
 
-
     public void votacao() {
         Response response = given().contentType("application/json").body(corpovotacao)
                 .header("x-api-key", "47a3f313-7107-4c3f-9213-3f9ff872874b")
@@ -34,6 +33,7 @@ public class TestAPI extends MassaDeDados {
         vote_id = id;
         System.out.println("ID =>" + id);
     }
+
 
 
     public void deletavotacao() {
